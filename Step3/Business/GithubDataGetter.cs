@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Task.DAL;
 
 namespace Task.Business
-{//comment
+{
     public class GithubDataGetter
     {
         private readonly string urlForBranches = "https://api.github.com/repos/enovatask2/task/branches";
