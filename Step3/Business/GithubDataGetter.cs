@@ -45,5 +45,7 @@ namespace Task.Business
 
             return JsonConvert.DeserializeObject<List<CommitRoot>>(response.Content);
         }
+
+        //add new method
     }
 }
