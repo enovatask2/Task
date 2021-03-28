@@ -15,7 +15,7 @@ namespace Task.Business {
             context = cx;
         }
 
-        public string Title => $"Termin spotkania: ";
+        public string Title => $"Zadanie rektrutacyjne: ";
 
         public CommitInfo Commit => commitInfo;
 
