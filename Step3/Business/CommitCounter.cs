@@ -44,7 +44,7 @@ namespace Task.Business
             {
                 DateTime minDate = result.Where(x => x.WhoCommit == person.WhoCommit).Min(x => x.DateCommit);
                 DateTime maxDate = result.Where(x => x.WhoCommit == person.WhoCommit).Max(x => x.DateCommit);
-                double days = (maxDate - minDate).TotalDays;
+                double days = (maxDate - minDate).TotalDays + 1;
 
                 int commitSum = result.Where(x => x.WhoCommit == person.WhoCommit).Sum(x => x.Quantity);
 
