@@ -23,7 +23,7 @@ namespace Task.DAL
                 String text = $"Autor: {WhoCommit} Data: {DateCommit.Date: dd:MM:yyyy} Ilość commitów: {Quantity}"; 
                 
                 if(AverageQuantity.HasValue)
-                    text += $" Średnia ilość commitów: {AverageQuantity}";
+                    text += $" Średnia ilość commitów: {Math.Round(AverageQuantity ?? 0, 2)}";
 
                 return text;
             }
